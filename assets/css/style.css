@@ -1486,3 +1486,47 @@ html {
   margin: 0 auto 30px auto;   /* centraliza o bloco */
   width: fit-content;         /* mantém o tamanho do botão */
 }
+
+/* RESPONSIVO MOBILE */
+@media (max-width: 768px) {
+
+  .service-card {
+    width: 100%;          /* ocupa toda largura */
+    padding: 20px;
+  }
+
+  .service-icon {
+    font-size: 55px;      /* 🔥 aumenta o ícone */
+  }
+
+  .service-card h3 {
+    font-size: 20px;      /* título maior */
+  }
+
+  .service-card p {
+    font-size: 16px;      /* texto mais legível */
+  }
+
+  .btn-whatsapp {
+    font-size: 16px;
+    padding: 12px 18px;   /* botão maior pro dedo */
+  }
+
+  .back-btn {
+    font-size: 16px;
+    padding: 12px 18px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .service-icon {
+    font-size: 65px;
+  }
+
+  .service-card h3 {
+    font-size: 22px;
+  }
+
+}
