@@ -1488,7 +1488,7 @@ html {
 }
 
 /* RESPONSIVO MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
 
   .service-card {
     width: 100%;          /* ocupa toda largura */
@@ -1515,18 +1515,6 @@ html {
   .back-btn {
     font-size: 16px;
     padding: 12px 18px;
-  }
-
-}
-
-@media (max-width: 480px) {
-
-  .service-icon {
-    font-size: 65px;
-  }
-
-  .service-card h3 {
-    font-size: 22px;
   }
 
 }
