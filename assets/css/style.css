@@ -1524,8 +1524,8 @@ html {
 
 .whatsapp-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   bottom: 20px;
   right: 20px;
   background-color: #25D366;
@@ -1535,20 +1535,10 @@ html {
   justify-content: center;
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  transition: 0.3s;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
 }
 
 .whatsapp-float img {
-  width: 32px;
-  height: 32px;
-}
-
-.whatsapp-float img {
-  width: 32px;
-  height: 32px;
-  filter: invert(1); /* deixa branco */
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
