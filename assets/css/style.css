@@ -1578,3 +1578,192 @@ html {
   }
 
 }
+
+/* DEPOIMENTOS */
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: var(--shadow-1);
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card.destaque {
+  border: 2px solid #25D366;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--sonic-silver);
+  margin-bottom: 20px;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+  .testimonial-card {
+    width: 100%;
+    padding: 35px 25px;
+  }
+
+  .testimonial-text {
+    font-size: 17px;
+  }
+
+  .client-name {
+    font-size: 20px;
+  }
+
+  .stars {
+    font-size: 28px;
+  }
+
+}
+
+/* ANIMAÇÃO DOS DEPOIMENTOS */
+
+.testimonial-card {
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 320px;
+  box-shadow: var(--shadow-1);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* EFEITO HOVER */
+.testimonial-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* LINHA ANIMADA */
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: #25D366;
+  transition: 0.5s;
+}
+
+.testimonial-card:hover::before {
+  left: 0;
+}
+
+/* FADE UP */
+
+.testimonial-card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.testimonial-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.testimonial-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeUp {
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+/* REDUZ ESPAÇO ENTRE SEÇÕES */
+
+.work {
+  padding-bottom: 40px !important;
+}
+
+.testimonial {
+  padding-top: 40px !important;
+}
+
+/* RESPONSIVO SERVICOS MOBILE */
+@media screen and (max-width: 768px) {
+
+  /* CARDS */
+  .service-card {
+    width: 100% !important;
+    padding: 35px 25px !important;
+    text-align: center !important;
+  }
+
+  /* ÍCONES */
+  .service-icon {
+    font-size: 75px !important;
+    display: block !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* TÍTULOS */
+  .service-card h3 {
+    font-size: 28px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* TEXTO */
+  .service-card p {
+    font-size: 18px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* LISTA */
+  .service-list {
+    gap: 25px !important;
+  }
+
+  /* BOTÃO VOLTAR */
+  .back-btn {
+    font-size: 18px !important;
+    padding: 14px 24px !important;
+    margin-top: 30px !important;
+  }
+
+}
