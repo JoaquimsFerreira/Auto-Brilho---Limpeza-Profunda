@@ -1767,3 +1767,41 @@ html {
   }
 
 }
+
+/* MOBILE SERVICOS */
+@media screen and (max-width: 768px) {
+
+  /* ÍCONES */
+  .service-card .material-symbols-rounded {
+    font-size: 80px !important;
+    line-height: 1 !important;
+    display: block !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* TITULOS */
+  .service-card h3 {
+    font-size: 30px !important;
+    line-height: 1.4 !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  /* TEXTOS */
+  .service-card p {
+    font-size: 19px !important;
+    line-height: 1.7 !important;
+  }
+
+  /* CARDS */
+  .service-card {
+    padding: 40px 25px !important;
+    width: 100% !important;
+  }
+
+  /* ESPAÇAMENTO */
+  .service-list {
+    gap: 30px !important;
+  }
+
+}
